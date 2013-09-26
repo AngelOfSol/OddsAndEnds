@@ -6,6 +6,7 @@
 	import code.layers.PlayerLayer;
 	import code.layers.KeyboardLayer;
 	import code.layers.LayerMediator;
+	import code.layers.LevelLayer;
 
 	public class Document extends MovieClip
 	{
@@ -20,7 +21,7 @@
 			this.layers = new Vector.<Layer>();
 			this.layers.push(new PlayerLayer(this));			
 			this.layers.push(new KeyboardLayer(this));
-			
+			this.layers.push(new LevelLayer(this));
 			// give the layers a mediator
 			// to enable communication between layers
 			
